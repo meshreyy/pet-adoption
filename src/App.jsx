@@ -1,5 +1,5 @@
 //use user's input and dynamically update a specific property
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import Table from './Table';
 
 
@@ -15,17 +15,12 @@ function PetForm({ onAddSubmission }) {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormData(prevFormData => ({
-            ...prevFormData,
-            [name]: value,
-        }));
+        setFormData(prev => ({ ...prev, [name]: value }));
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         onAddSubmission(formData);
-
         setFormData({
             petName: '',
             petType: '',
@@ -33,9 +28,8 @@ function PetForm({ onAddSubmission }) {
             yourName: '',
             email: '',
             phone: '',
-        })
+        });
     };
-
 
     return (
         <form onSubmit={handleSubmit}>
