@@ -1,0 +1,30 @@
+
+
+
+#h1 {
+    font-size: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+  body {
+    background-image: url(bkg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: position x 1px;
+  }
+
+  #ta {
+    font-size: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #btn1 {
+
+    cursor: pointer;
+  }
+
+
